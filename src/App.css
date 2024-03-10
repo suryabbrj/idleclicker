@@ -5,8 +5,46 @@
 
 
  .heading{
-  font-size: 2em;
-  margin-top: 20%;
+  font-size: 1.5em;
+  margin-top: 15%;
   color: #333;
   text-align: center;
+ }
+
+ .header{
+  font-size: 3rem;
+  background-color: #f4f4f4;
+  color: grey;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+ }
+ 
+ .plus{
+  background-color: #15ff00;
+  border-radius: 15px;
+  margin-right: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-bottom: 20px;
+ }
+
+ .minus{
+  background-color: #464646;
+  border-radius: 15px;
+  margin-right: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-bottom: 20px;
+ }
+
+ .reset{
+  background-color: #fa5757;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin-bottom: 20px;
  }

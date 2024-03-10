@@ -4,29 +4,38 @@ import "./App.css";
 function Increment() {
   const [n=0, setN] = useState(0);
   const count = {n};
-  const handleClick = () => {
+  const handleAdd = () => {
     setN(n + 1);
     console.log(n+1);
   }
+  const handleMin = () => {
+    setN(n - 1);
+    console.log(n-1);
+  }
   return (
+      <center>
     <div>
 
+        <h1 className="header">Useless clicker</h1>
     <div className="heading">
-      <center>
-        <h1>Useless clicker</h1>
-        <button onClick={handleClick} title="see if you can get to 999, that should be fun XD">
-            You clicked this button {count.n} times
+        <h1>{count.n}</h1>
+        <button className="plus" onClick={handleAdd} >
+            click here to add + 
+            </button>
+            
+            <button className="minus" onClick={handleMin}>
+            click here to reduce -
             </button>
             <br></br>
-            <button onClick={() => setN(0)} title="reset the counter">
+            <button className="reset" onClick={() => setN(0)} title="reset the counter">
               click here to reset the counter
               </button>
             
 
        
+    </div>
+    </div>
       </center>
-    </div>
-    </div>
   );
 }
 
